@@ -59,9 +59,15 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "rofi", "-show", "drun", "-font", rofifont, "-theme", "gruvbox-dark-soft", "-show-icons", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
+static const char *mutecmd[] = { "amixer", "-q", "sset", "Master", "toggle", NULL };
+static const char *volupcmd[] = { "amixer", "-q", "sset", "PCM", "5-", "unmute", NULL };
+static const char *voldowncmd[] = { "amixer", "-q", "sset", "PCM", "5+", "unmute", NULL };
 
 static Key keys[] = {
     /* modifier                     key        function        argument */
+    { 0,                       0x1008ff12,      spawn,          {.v = mutecmd } },
+    { 0,                       0x1008ff11,      spawn,          {.v = volupcmd } },
+    { 0,                       0x1008ff13,      spawn,          {.v = voldowncmd } },
     { MODKEY,                       XK_F1,      spawn,         {.v = dmenucmd } },
     { MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
     { MODKEY,                       XK_b,      togglebar,      {0} },
