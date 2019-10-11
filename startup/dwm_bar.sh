@@ -44,6 +44,6 @@ export SEP2="]"
 # Update dwm status bar every second
 while true
 do
-    xsetroot -name "$(dwm_resources)$(dwm_network)$(dwm_alsa)$(dwm_keyboard)$(dwm_jdate)$(dwm_date)]"
+    xsetroot -name ";$(dwm_resources)$(dwm_network)$(dwm_alsa)$(dwm_keyboard)$(dwm_jdate)$(dwm_date)]"
     sleep 1s
 done
