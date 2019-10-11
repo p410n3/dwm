@@ -34,16 +34,17 @@ export SEP2="]"
 #. "$DIR/bar-functions/dwm_pulse.sh"
 #. "$DIR/bar-functions/dwm_backlight.sh"
 
+. "$DIR/bar-functions/dwm_keyboard.sh"
+. "$DIR/bar-functions/dwm_time.sh"
+. "$DIR/bar-functions/dwm_date.sh"
+. "$DIR/bar-functions/dwm_jdate.sh"
+. "$DIR/bar-functions/dwm_alsa.sh"
 . "$DIR/bar-functions/dwm_resources.sh"
 . "$DIR/bar-functions/dwm_network.sh"
-. "$DIR/bar-functions/dwm_alsa.sh"
-. "$DIR/bar-functions/dwm_keyboard.sh"
-. "$DIR/bar-functions/dwm_jdate.sh"
-. "$DIR/bar-functions/dwm_date.sh"
 
 # Update dwm status bar every second
 while true
 do
-    xsetroot -name ";$(dwm_resources)$(dwm_network)$(dwm_alsa)$(dwm_keyboard)$(dwm_jdate)$(dwm_date)]"
+    xsetroot -name ";$(dwm_keyboard)$(dwm_time)$(dwm_date)$(dwm_jdate)$(dwm_alsa)$(dwm_resources)$(dwm_network)"
     sleep 1s
 done
