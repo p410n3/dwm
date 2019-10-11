@@ -9,9 +9,9 @@ dwm_jdate () {
     if [ "$IDENTIFIER" = "unicode" ]; then
         #printf "📆 %s" "$(date "+%a %d-%m-%y %T")"
         #printf "📆 %s" "$(jdate +%G'*'%d'*'%V'*'%Y)"
-        printf "📆 %s" "$(jdate +''%d'/'%m'/'%Y)"
+        printf "%s" "$(jdate +''%d'/'%m'/'%Y)"
     else
-        printf "DAT %s" "$(jdate +%G'*'%d'*'%V'*'%Y)"
+        printf "DAT %s" "$(jdate +''%d'/'%m'/'%Y)"
     fi
     printf "%s\n" "$SEP"
 }
