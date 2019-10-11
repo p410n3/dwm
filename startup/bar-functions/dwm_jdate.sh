@@ -7,10 +7,9 @@
 # Date is formatted like like this: "[Mon 01-01-00 00:00:00]"
 dwm_jdate () {
     if [ "$IDENTIFIER" = "unicode" ]; then
-
-        #date '+%H:%M:%S'
         #printf "📆 %s" "$(date "+%a %d-%m-%y %T")"
-        printf "📆 %s" "$(jdate +%G'*'%d'*'%V'*'%Y)"
+        #printf "📆 %s" "$(jdate +%G'*'%d'*'%V'*'%Y)"
+        printf "📆 %s" "$(jdate +''%d'/'%m'/'%Y)"
     else
         printf "DAT %s" "$(jdate +%G'*'%d'*'%V'*'%Y)"
     fi

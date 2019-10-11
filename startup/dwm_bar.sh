@@ -20,16 +20,12 @@ export IDENTIFIER="unicode"
 # Change the charachter(s) used to seperate modules. If two are used, they will be placed at the start and end.
 export SEP="|"
 #export SEP1="["
-export SEP2="]"
+#export SEP2="]"
 
 # Import the modules
-#. "$DIR/bar-functions/dwm_countdown.sh"
-#. "$DIR/bar-functions/dwm_transmission.sh"
 #. "$DIR/bar-functions/dwm_cmus.sh"
-#. "$DIR/bar-functions/dwm_mail.sh"
 #. "$DIR/bar-functions/dwm_weather.sh"
 #. "$DIR/bar-functions/dwm_vpn.sh"
-#. "$DIR/bar-functions/dwm_ccurse.sh"
 #. "$DIR/bar-functions/dwm_battery.sh"
 #. "$DIR/bar-functions/dwm_pulse.sh"
 #. "$DIR/bar-functions/dwm_backlight.sh"
