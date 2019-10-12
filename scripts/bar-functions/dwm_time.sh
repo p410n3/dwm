@@ -11,7 +11,7 @@ dwm_time () {
 
         #date '+%H:%M:%S'
         #printf "📆 %s" "$(date "+%a %d-%m-%y %T")"
-        printf "%s" "$(date '+%H:%M:%S')"
+        printf " %s " "$(date '+%H:%M:%S')"
     else
         printf "%s" "$(date '+%H:%M:%S')"
     fi

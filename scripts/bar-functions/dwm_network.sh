@@ -22,7 +22,7 @@ dwm_network () {
 #        printf "NET %s %s | %s" "$CONNAME" "$PRIVATE" "$PUBLIC"
 #    fi
     CHECKNET=$(/usr/libexec/i3blocks/bandwidth wlp3s0)
-    printf "🌐 %s" "$CHECKNET"
+    printf "🌐%s" "$CHECKNET"
     printf "%s\n" "$SEP"
 }
 

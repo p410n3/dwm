@@ -18,7 +18,7 @@ dwm_resources () {
     EFREE=$(df -h | grep '/dev/sda6' | awk '{print $4}')
 
     if [ "$IDENTIFIER" = "unicode" ]; then
-        printf " MEM %s/%s  CPU %s  Void %s  E: %s  D: %s" "$MEMUSED" "$MEMTOT" "$CPU" "$VOIDFREE" "$DFREE" "$EFREE"
+        printf "MEM %s/%s CPU %s Void: %s E: %s D: %s" "$MEMUSED" "$MEMTOT" "$CPU" "$VOIDFREE" "$DFREE" "$EFREE"
     else
         printf "MEM %s/%s CPU %s Void %s E: %s D: %s" "$MEMUSED" "$MEMTOT" "$CPU" "$VOIDFREE" "$DFREE" "$EFREE"
     fi

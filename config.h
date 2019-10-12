@@ -12,7 +12,7 @@ static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int extrabar           = 1;        /* 0 means no extra bar */
-static const char *fonts[]          = { "monospace:size=10" }; // ,"Vazir:size=11"
+static const char *fonts[]          = { "iosevka:size=12" }; // ,"Vazir:size=11", iosevka 12
 static const char dmenufont[]       = "monospace:size=10";
 static const char rofifont[]        = "iosevka 12";
 static const char col_gray1[]       = "#222222";
@@ -27,7 +27,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
     /* xprop(1):
@@ -69,7 +69,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *mutecmd[] = { "amixer", "set", "'Master'", "toggle", NULL };
 static const char *volupcmd[] = { "amixer", "set", "'Master'", "5%+", NULL };
 static const char *voldowncmd[] = { "amixer", "set", "'Master'", "5%-", NULL };
-static const char *rofi_power[] = { "/home/linarcx/dwm/startup/rofi-power.sh", NULL };
+static const char *rofi_power[] = { "/home/linarcx/dwm/scripts/rofi-power.sh", NULL };
 //static const char *mutecmd[] = { "amixer", "-q", "sset", "Master", "toggle", NULL };
 //static const char *volupcmd[] = { "amixer", "-q", "sset", "PCM", "5-", "unmute", NULL };
 
