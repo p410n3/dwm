@@ -69,6 +69,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *mutecmd[] = { "amixer", "set", "'Master'", "toggle", NULL };
 static const char *volupcmd[] = { "amixer", "set", "'Master'", "5%+", NULL };
 static const char *voldowncmd[] = { "amixer", "set", "'Master'", "5%-", NULL };
+static const char *rofi_power[] = { "/home/linarcx/dwm/startup/rofi-power.sh", NULL };
 //static const char *mutecmd[] = { "amixer", "-q", "sset", "Master", "toggle", NULL };
 //static const char *volupcmd[] = { "amixer", "-q", "sset", "PCM", "5-", "unmute", NULL };
 
@@ -110,7 +111,9 @@ static Key keys[] = {
         TAGKEYS(                        XK_7,                      6)
         TAGKEYS(                        XK_8,                      7)
         TAGKEYS(                        XK_9,                      8)
-        { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+//        { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+        { MODKEY|ShiftMask,            XK_q,      spawn,          {.v = rofi_power } },
+
 };
 
 /* button definitions */
